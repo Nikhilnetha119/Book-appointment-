@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: url('https://img.freepik.com/premium-photo/calendar-page-close-up-blue-background-business-planning-appointment-meeting-concept_293060-976.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            text-align: left;
+        }
+        input{
+            font-size:20px;
+            width:800px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: orange; text-align:center">Book a call</h1>
+    <h5 style="text-align:center;" >Book a call slot and our representative will call you within 1hr of selected time</h5>
+    <form action="#" onsubmit="getacall()">
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" id="name" value="Nikhil">
+        <br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" value="nikhilkumarthumma119@gmail.com">
+        <br><br>
+        <label for="phone">Phone:</label><br>
+        <input type="number" id="phone" value="9603133493">
+        <br><br>
+        <label for="Time">Time for call:</label><br>
+        <input type="date" style="width:398px"> <input type="Time" style="width:398px">
+        <br><br>
+        <input type="submit" value="Get a Call" style="background-color:orange">
+    </form>
+    <script>
+        function getacall() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const preferredDate = document.querySelector('input[type="date"]').value;
+            const preferredTime = document.querySelector('input[type="time"]').value;
+        }
+    </script>
+</body>
+</html>
